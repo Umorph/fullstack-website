@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--TODO: подготовить метатеги для сайта-->
+    <title>Title</title>
+</head>
+<body>
+    <header class="page-header">
+<!--        TODO Добавить кнопку/ссылку для перехода на главную страницу-->
+        <h1 class="visually-hidden">Заголовок страницы</h1>
+<!--        TODO Придумать общий заголовок для страницы-->
+        <a class="page-header__logo" href="#">
+            <img class="page-header__logo-image" src="#" alt="Логотип студии «Dual Dimension»">
+        </a>
+        <nav class="main-nav">
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item"><a href="#">Контакты</a></li>
+                <li class="site-list__item"><a href="#">Работодателю</a></li>
+                <li class="site-list__item"><a href="#">Проекты</a></li>
+                <li class="site-list__item"><a href="#">Калькулятор</a></li>
+                <li class="site-list__item"><a href="#">Отзывы</a></li>
+            </ul>
+            <ul class="main-nav__list social-list">
+                <li class="social-list__item"><a href="#">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home-page">
+        <section class="keyvisual">
+            <h2 class="keyvisual__header">Full stack-разработчик <span>Владислав Кантария</span></h2>
+            <p class="keyvisual__paragraph">Разработаю сайт “под ключ” и полностью упакую ваш бизнес!</p>
+            <img class="keyvisual__photo" src="#" alt="Фотография разработчка">
+        </section>
+        <section class="description">
+            <h2 class="visually-hidden">Профиль разработчика</h2>
+            <img class="description__photo" src="#" alt="Аватар профиля">
+            <p class="description__greeting">Привет! Меня зовут Влад и  я помогу в создании, разработке, верстке и
+                полноценной упаковке вашего сайта.
+            </p>
+            <p class="description__statistic-heading">Немного цифр:</p>
+            <table class="description__table-statistic">
+                <caption class="visually-hidden">Статистика по работе:</caption>
+                <tr>
+                    <td>1</td><td>628</td><td>34826</td><td>3940</td>
+                </tr><tr>
+                    <th>(Год) Опыт работы</th><th>Чашек кофе</th><th>Строк кода</th><th>Часов практики</th>
+                </tr>
+            </table>
+            <table class="description__table-stack">
+                <caption class="visually-hidden">Технологии и уровень владения:</caption>
+                <tr>
+                    <td>HTML</td><td>99%</td>
+                </tr>
+                <tr>
+                    <td>CSS</td><td>93%</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td><td>74%</td>
+                </tr>
+                <tr>
+                    <td>Python</td><td>65%</td>
+                </tr>
+                <tr>
+                    <td>Django</td><td>71%</td>
+                </tr>
+            </table>
+        </section>
+        <section class="work-principles">
+            <h2 class="work-principles__heading">Принципы моей работы</h2>
+            <div class="work-principles__column-wrapper">
+                <h3 class="work-principles__list-heading">Для заказчика</h3>
+                <ul class="work-principles__list for-customer-list">
+                    <li class="for-customer-list__item">Выбираю рациональное решение, независимо от сложности</li>
+                    <li class="for-customer-list__item">Уважаю ваше время, делаю работу в срок</li>
+                    <li class="for-customer-list__item">Произвожу только качественный продукт</li>
+                </ul>
+            </div>
+            <div class="work-principles__column-wrapper">
+                <h3 class="work-principles__list-heading">Frontend</h3>
+                <ul class="work-principles__list frontend-list">
+                    <li class="frontend-list__item">Всегда использую семантический код</li>
+                    <li class="frontend-list__item">Пишу код по методологии БЭМ, что  облегчает поддержку готового сайта</li>
+                    <li class="frontend-list__item">Создаю удобный и читаемый код</li>
+                </ul>
+            </div>
+            <div class="work-principles__column-wrapper">
+                <h3 class="work-principles__list-heading">Backend</h3>
+                <ul class="work-principles__list backend-list">
+                    <li class="backend-list__item">Добиваюсь корректной работы всех функций сайта</li>
+                    <li class="backend-list__item">Владею основами сетевой безопасности</li>
+                    <li class="backend-list__item">Детально работаю с базами данных</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__sections-wrapper">
+            <h3 class="page-footer__heading">Разделы</h3>
+            <ul class="page-footer__sections-list sections-list">
+                <li class="section-item"><a href="#">Контакты</a></li>
+                <li class="section-item"><a href="#">Работодателю</a></li>
+                <li class="section-item"><a href="#">Проекты</a></li>
+                <li class="section-item"><a href="#">Калькулятор</a></li>
+                <li class="section-item"><a href="#">Отзывы</a></li>
+            </ul>
+        </div>
+        <div class="page-footer__information-wrapper">
+            <h3 class="visually-hidden">Внешние ссылки и информация об авторе</h3>
+            <b class="page-footer__copyright">© Vladislav Kantariya,<br>2020</b>
+            <ul class="page-footer__links-list links-list">
+                <li class="links-item"><a href="#"><img src="#" alt="Связаться через скайп"></a></li>
+                <li class="links-item"><a href="#"><img src="#" alt="Посмотреть профиль автора на гитхаб"></a></li>
+                <li class="links-item"><a href="#"><img src="#" alt="Связаться через телеграм"></a></li>
+            </ul>
+        </div>
+        <div class="page-footer__authors">
+            <h3 class="page-footer__heading">Создано:</h3>
+            <p>DUALDIMENSION STUDIO<br>
+                Разработка<br>
+                - Владислав Кантария<br>
+                Дизайн<br>
+                - Yanomira
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
