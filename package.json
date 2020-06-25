@@ -11,5 +11,8 @@
     "url": "https://github.com//Umorph/fullstack-website.git"
   },
   "author": "Umorph",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
