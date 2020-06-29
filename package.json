@@ -1,7 +1,7 @@
 {
-  "name": "glp",
+  "name": "Fullstack website",
   "version": "1.0.0",
-  "description": "Gulp testing",
+  "description": "Сайт-портфолио веб-рабработчика",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
