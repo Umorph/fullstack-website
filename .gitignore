@@ -27,3 +27,4 @@
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
+node_modules
