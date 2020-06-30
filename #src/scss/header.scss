@@ -1,0 +1,52 @@
+.page-header {
+    @include container;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.page-header__logo {
+    width: 220px;
+
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    text-align: center;
+    color: $black;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.main-nav__list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.site-list__item {
+    flex-grow: 1;
+    text-align: center;
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $black;
+    }
+}
+
+.site-list {
+    width: 820px;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100px;
+}
