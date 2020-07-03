@@ -1,0 +1,17 @@
+.main-screen {
+    @include container;
+    box-shadow: inset 0 0 0 1px #00ff00;
+}
+
+.main-screen__heading {
+    width: 460px;
+
+    font-size: 72px;
+    line-height: 80px;
+
+    box-shadow: inset 0 0 0 1px #ff0000;
+    span {
+        font-size: 36px;
+        line-height: 40px;  
+    }
+}
