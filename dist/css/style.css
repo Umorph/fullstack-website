@@ -531,3 +531,105 @@ input[type="radio"].visually-hidden {
       -ms-transform: rotate(33.06deg);
           transform: rotate(33.06deg);
 }
+
+.work-principles {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 1420px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  margin-top: 150px;
+  padding: 0;
+}
+
+.work-principles__heading {
+  margin: 0;
+  padding: 10px 0;
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.work-principles__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  width: 1240px;
+}
+
+.work-principles__column-wrapper {
+  margin-top: 165px;
+  width: 400px;
+}
+
+.work-principles__list-heading {
+  margin: 0;
+  padding: 30px 30px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.work-principles__list {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 450px;
+  margin: 0 10px;
+  padding: 70px 55px;
+  list-style: none;
+  border: 2px solid #000000;
+  border-radius: 20px;
+}
+
+.for-customer-list__item,
+.frontend-list__item,
+.backend-list__item {
+  padding-bottom: 20px;
+}
+
+.work-principles::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 610px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #07053f;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.work-principles::after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 680px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #ff0303;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.work-principles__container::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 750px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #ffd130;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.7);
+}
