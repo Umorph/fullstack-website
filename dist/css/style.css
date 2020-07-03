@@ -165,3 +165,51 @@ input[type="radio"].visually-hidden {
   width: 120px;
   min-height: 50px;
 }
+
+.main-screen {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 1420px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 50px;
+  -webkit-box-shadow: inset 0 0 0 1px #00ff00;
+          box-shadow: inset 0 0 0 1px #00ff00;
+}
+
+.main-screen__description-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 540px;
+}
+
+.main-screen__heading {
+  margin: 0;
+  padding: 0;
+  margin-top: 175px;
+  width: 462px;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 80px;
+}
+
+.main-screen__heading span {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.main-screen__paragraph {
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+  width: 473px;
+}
