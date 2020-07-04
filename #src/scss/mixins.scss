@@ -10,8 +10,9 @@
 }
 
 @mixin container() {
+    position: relative;
     box-sizing: border-box;
-    width: 1240px;
+    width: 1420px;
     margin: 0 auto;
     padding: 0 20px;
 }
