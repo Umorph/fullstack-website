@@ -1,7 +1,7 @@
 {
-  "name": "Fullstack website",
+  "name": "glp",
   "version": "1.0.0",
-  "description": "Сайт-портфолио веб-рабработчика",
+  "description": "Gulp testing",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,8 +26,5 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-html": "^1.0.2",
     "gulp-webpcss": "^1.1.1"
-  },
-  "dependencies": {
-    "normalize.css": "^8.0.1"
   }
 }
