@@ -8,11 +8,3 @@
         font-style: #{$style};
     }
 }
-
-@mixin container() {
-    position: relative;
-    box-sizing: border-box;
-    width: 1420px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
