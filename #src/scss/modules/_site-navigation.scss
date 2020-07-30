@@ -1,0 +1,24 @@
+@import "../variables.scss";
+
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 850px;
+
+    list-style: none;
+}
+
+.site-navigation__link {
+
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $black;
+}

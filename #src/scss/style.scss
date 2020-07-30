@@ -2,3 +2,7 @@
 @import "fonts.scss";
 @import "variables.scss";
 @import "scaffolding.scss";
+
+// Header
+@import "modules/site-navigation";
+@import "modules/header";
