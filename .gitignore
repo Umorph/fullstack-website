@@ -1,33 +1,5 @@
-# Other files
-
-/reference/Главная, блок 1.jpg
-/reference/Главная, блок 2.jpg
-/reference/Главная, блок 3.jpg
-/reference/Калькулятор, блок 1.jpg
-/reference/Калькулятор, блок 2.jpg
-/reference/Контакты, блок 1.jpg
-/reference/Контакты, блок 2.jpg
-/reference/Макет.url
-/reference/Отзывы, блок 1.jpg
-/reference/Отзывы, блок 2.jpg
-/reference/Проекты, блок 1.jpg
-/reference/Проекты,  блок 2.jpg
-/reference/Работадателю, блок 2.jpg
-/reference/Работодателю, блок 1.jpg
-
-
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
-
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
 node_modules
 package-lock.json
 
 docs
+docs/index.html
