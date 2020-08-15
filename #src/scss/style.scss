@@ -1,3 +1,4 @@
+// Global
 @import "mixins.scss";
 @import "fonts.scss";
 @import "variables.scss";
@@ -9,3 +10,6 @@
 
 // Addons
 @import "modules/button-image";
+
+// Main page
+@import "modules/main-page";

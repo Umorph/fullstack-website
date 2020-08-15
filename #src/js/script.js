@@ -14,23 +14,11 @@ testWebP(function (support) {
     }
 });
 
-var headerMenuButton = document.querySelector(".header__menu-button");
-var firstMenuLine = document.querySelector(".button-image__line-first");
-var secondMenuLine = document.querySelector(".button-image__line-second");
-var thirdMenuLine = document.querySelector(".button-image__line-third");
+const headerMenuButton = document.querySelector('.header__menu-button'),
+    headerNavigation = document.querySelector('.header__site-navigation'),
+    firstMenuLine = document.querySelector('.button-image__line-first'),
+    secondMenuLine = document.querySelector('.button-image__line-second'),
+    thirdMenuLine = document.querySelector('.button-image__line-third');
 
-headerMenuButton.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    // alert('ПРОИЗОШОЛ ТРОЛЛЕНГ')
-    if (headerMenuButton.classList.contains("header__menu-button--opened")) {
-        headerMenuButton.classList.remove("header__menu-button--opened");
-        firstMenuLine.classList.remove("button-image__line-first--opened");
-        secondMenuLine.classList.remove("button-image__line-second--opened");
-        thirdMenuLine.classList.remove("button-image__line-third--opened");
-    } else {
-        headerMenuButton.classList.add("header__menu-button--opened");
-        firstMenuLine.classList.add("button-image__line-first--opened");
-        secondMenuLine.classList.add("button-image__line-second--opened");
-        thirdMenuLine.classList.add("button-image__line-third--opened");
-    }
-});
+// close nav menu, if js is working:
+headerNavigation.classList.remove('.site-navigation--opened');
