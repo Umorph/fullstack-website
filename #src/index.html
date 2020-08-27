@@ -8,26 +8,40 @@
     <link rel="stylesheet" href="css/style.min.css">
     <title>Fullstack v3.0</title>
     <!-- TODO прописать метатеги и заголовок -->
+    <!-- TODO добавить разные изображения на разные брейкпоинты -->
 </head>
 
 <body>
     @@include('_header.html')
     <main class="main-page">
-        <section class="main-page__keyvisual keyvisual-main">
-            <div class="keyvisual-main__container">
-                <h1 class="keyvisual-main__heading">
-                    <span class="keyvisual-main__profession">Frontend разработчик</span>
-                    Владислав Кантария
-                </h1>
-                <div class="keyvisual-main__offer-container">
-                    <img class="keyvisual-main__photo" src="img/main-avatar.png" alt="Владислав Кантария">
-                    <p class="keyvisual-main__offer">
-                        Разработаю сайт “под ключ” и<br>
-                        полностью упакую ваш бизнес!
-                    </p>
+        <div class="main-page__paralax-container main-page__paralax-container--keyvisual-icons">
+            <section class="main-page__keyvisual keyvisual-main">
+                <div class="keyvisual-main__container">
+                    <h1 class="keyvisual-main__heading">
+                        <span class="keyvisual-main__profession">Frontend разработчик</span>
+                        Владислав Кантария
+                    </h1>
+                    <div class="keyvisual-main__offer-container">
+                        <img class="keyvisual-main__photo" src="img/main-avatar.png" alt="Владислав Кантария">
+                        <p class="keyvisual-main__offer">
+                            Разработаю сайт “под ключ” и<br>
+                            полностью упакую ваш бизнес!
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+        <div class="main-page__paralax-container main-page__paralax-container--yellow-circuit">
+            <section class="main-profile">
+                <div class="main-profile__avatar">
+                    <img class="main-profile__avatar-image" src="img/description-avatar.png" alt="Фотография разработчика">
+                </div>
+                <p class="main-profile__greeting">
+                    Привет! Меня зовут Влад и я помогу в создании, разработке, верстке и полноценной упаковке вашего
+                    сайта.
+                </p>
+            </section>
+        </div>
     </main>
     @@include('_footer.html')
     <script src="js/script.min.js"></script>
