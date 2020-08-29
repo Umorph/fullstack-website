@@ -1,0 +1,13 @@
+.main-page__paralax-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &--yellow-circuit {
+        background-image: url("../../img/yellow-circuit.png");
+        background-position: center 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
