@@ -14,16 +14,20 @@
 
     list-style: none;
 
+    transition: all 0.5s ease-out;
+
     &::before {
         content: "";
         position: absolute;
-        top: -4px;
+        top: -3px;
 
         display: block;
         width: 100vw;
         height: 3px;
 
         background-color: $white;
+
+        z-index: 1;
     }
 
     @media (min-width: 1200px) {
