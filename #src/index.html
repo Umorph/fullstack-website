@@ -22,7 +22,11 @@
                         Владислав Кантария
                     </h1>
                     <div class="keyvisual-main__offer-container">
-                        <img class="keyvisual-main__photo" src="img/main-avatar.png" alt="Владислав Кантария">
+                        <picture class="keyvisual-main__photo">
+                            <source media="(max-width: 750px)" srcset="img/main-avatar-mini.png">
+                            <source media="(min-width: 751px)" srcset="img/main-avatar.jpg">
+                            <img src="img/main-avatar.jpg">
+                        </picture>
                         <p class="keyvisual-main__offer">
                             Разработаю сайт “под ключ” и<br>
                             полностью упакую ваш бизнес!
@@ -40,6 +44,31 @@
                     Привет! Меня зовут Влад и я помогу в создании, разработке, верстке и полноценной упаковке вашего
                     сайта.
                 </p>
+            </section>
+            <section class="main-stat">
+                <h2 class="main-stat__heading visually-hidden">Статистика</h2>
+                <ul class="main-stat__list">
+                    <li class="main-stat__item">
+                        <p class="main-stat__count">3</p>
+                        <p class="main-stat__topic">года опыта работы</p>
+                    </li>
+                    <li class="main-stat__item">
+                        <p class="main-stat__count">628</p>
+                        <p class="main-stat__topic">чашек кофе</p>
+                    </li>
+                    <li class="main-stat__item">
+                        <p class="main-stat__count">2428</p>
+                        <p class="main-stat__topic">часов практики</p>
+                    </li>
+                    <li class="main-stat__item">
+                        <p class="main-stat__count">628</p>
+                        <p class="main-stat__topic">чашек кофе</p>
+                    </li>
+                    <li class="main-stat__item">
+                        <p class="main-stat__count">137</p>
+                        <p class="main-stat__topic">завершенных работ</p>
+                    </li>
+                </ul>
             </section>
         </div>
     </main>
