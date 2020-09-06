@@ -1,0 +1,44 @@
+.header {
+    position: relative;
+
+    height: 63px;
+
+    background-color: #ffffff;
+
+    transition: all 0.5s ease-out;
+
+    @media (min-width: 1200px) {
+        background-color: $white;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+
+            display: block;
+            width: 100%;
+            height: 3px;
+
+            background-color: $black;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 61px;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        height: 2px;
+
+        background-color: #000000;
+    }
+
+    &--blue {
+        height: 121px;
+
+        background-color:#025D8C;
+    }
+}
