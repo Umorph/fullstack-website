@@ -1,0 +1,21 @@
+.main-page__paralax-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &--yellow-circuit {
+        background-image: url("../img/yellow-bg-mobile.png");
+        background-position: center 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media (min-width: 750px) {
+            background-image: url("../img/yellow-bg-tablet.png");
+        }
+
+        @media (min-width: 1200px) {
+            background-image: url("../img/yellow-bg-desktop.png");
+        }
+    }
+}
