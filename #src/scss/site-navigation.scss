@@ -1,0 +1,39 @@
+.site-navigation {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    width: 310px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+
+    transition: all 0.5s ease-out;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -3px;
+
+        display: block;
+        width: 100vw;
+        height: 3px;
+
+        background-color: $white;
+
+        z-index: 1;
+    }
+
+    @media (min-width: 1200px) {
+        width: 870px;
+        justify-content: space-between;
+
+        &::before {
+            content: none;
+        }
+    }
+}
