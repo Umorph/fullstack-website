@@ -5,11 +5,17 @@
 @import "scaffolding.scss";
 
 // Header
-@import "modules/site-navigation";
-@import "modules/header";
+@import "site-navigation.scss";
+@import "header.scss";
 
-// Main page
-@import "modules/main-page";
-@import "modules/keyvisual-main";
-@import "modules/main-profile";
-@import "modules/main-stat";
+// BEM blocks
+@import "main-page.scss";
+@import "keyvisual-main.scss";
+@import "main-profile.scss";
+@import "main-stat.scss";
+@import "main-advantages.scss";
+@import "skills-slider.scss";
+@import "round-progress.scss";
+
+// Main block for page
+@import "main-skills.scss";
