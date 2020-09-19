@@ -14,11 +14,40 @@ testWebP(function (support) {
     }
 });
 
-const headerMenuButton = document.querySelector('.header__menu-button'),
-    headerNavigation = document.querySelector('.header__site-navigation'),
-    firstMenuLine = document.querySelector('.button-image__line-first'),
-    secondMenuLine = document.querySelector('.button-image__line-second'),
-    thirdMenuLine = document.querySelector('.button-image__line-third');
+var headerBlock = document.querySelector('.header');
+var headerLink = document.querySelector('.header__link');
+var headerMenu = document.querySelector('.site-navigation');
+var headerButton = document.querySelector('.header__menu-button');
 
-// close nav menu, if js is working:
-headerNavigation.classList.remove('.site-navigation--opened');
+closeHeaderMenu = function () {
+    headerMenu.classList.remove('header__site-navigation--opened');
+    headerButton.classList.remove('header__menu-button--opened');
+    headerBlock.classList.remove('header--blue');
+    headerLink.classList.remove('header__link--white');
+}
+
+closeHeaderMenu();
+
+headerButton.addEventListener('click', function (evt) {
+    headerMenu.classList.toggle('header__site-navigation--opened');
+    headerButton.classList.toggle('header__menu-button--opened');
+    headerBlock.classList.toggle('header--blue');
+    headerLink.classList.toggle('header__link--white');
+});
+
+const circle = document.querySelector('.round-progress__circle');
+const radius = circle.r.baseVal.value;
+const circumference = 2 * Math.PI * radius;
+const input = document.querySelector('.percent');
+
+input.addEventListener('change', function() {
+  setProgress(input.value);
+})
+
+circle.style.strokeDasharray = `${circumference} ${circumference}`;
+circle.style.strokeDashoffset = circumference;
+
+function setProgress(percent) {
+  const offset = circumference - percent / 100 * circumference;
+  circle.style.strokeDashoffset = offset;
+}

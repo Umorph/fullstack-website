@@ -1,0 +1,12 @@
+.round-progress {
+    margin: 0;
+    padding: 0;
+    width: 310px;
+    height: 310px;
+
+    box-shadow: inset 0 0 0 1px #0000ff;
+}
+
+.round-progress__circle {
+    transition: stroke-dashoffset 0.3s;
+}
