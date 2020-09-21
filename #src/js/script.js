@@ -1,53 +1,43 @@
-function testWebP(callback) {
-    var webP = new Image();
-    webP.onload = webP.onerror = function () {
-        callback(webP.height == 2);
-    };
-    webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-}
+@@include('slick.min.js');
+@@include('slider.js');
+@@include('webp.js');
+@@include('header.js');
 
-testWebP(function (support) {
-    if (support == true) {
-        document.querySelector('body').classList.add('webp');
-    } else {
-        document.querySelector('body').classList.add('no-webp');
-    }
-});
-
-var headerBlock = document.querySelector('.header');
-var headerLink = document.querySelector('.header__link');
-var headerMenu = document.querySelector('.site-navigation');
-var headerButton = document.querySelector('.header__menu-button');
-
-closeHeaderMenu = function () {
-    headerMenu.classList.remove('header__site-navigation--opened');
-    headerButton.classList.remove('header__menu-button--opened');
-    headerBlock.classList.remove('header--blue');
-    headerLink.classList.remove('header__link--white');
-}
-
-closeHeaderMenu();
-
-headerButton.addEventListener('click', function (evt) {
-    headerMenu.classList.toggle('header__site-navigation--opened');
-    headerButton.classList.toggle('header__menu-button--opened');
-    headerBlock.classList.toggle('header--blue');
-    headerLink.classList.toggle('header__link--white');
-});
-
+const svg = document.querySelector('.round-progress__ring');
 const circle = document.querySelector('.round-progress__circle');
-const radius = circle.r.baseVal.value;
-const circumference = 2 * Math.PI * radius;
-const input = document.querySelector('.percent');
+let radius = 0;
+let svgSize = 0;
+let circumference = 0;
+let currentPercentValue = 75;
 
-input.addEventListener('change', function() {
-  setProgress(input.value);
-})
+let currentSlide = 0;
 
-circle.style.strokeDasharray = `${circumference} ${circumference}`;
-circle.style.strokeDashoffset = circumference;
+frame.onresize = function(){
+    recalculateSizes();
+}
+
+recalculateSizes = function () {
+    svgSize = svg.width.baseVal.value;
+    radius = (svgSize / 2) - (15 * 2);
+    radius += 20;
+    circle.r.baseVal.value = radius;
+    circumference = 2 * Math.PI * radius;
+    circle.style.strokeDasharray = `${circumference} ${circumference}`;
+    circle.style.strokeDashoffset = circumference;
+    setProgress(currentPercentValue);
+};
 
 function setProgress(percent) {
-  const offset = circumference - percent / 100 * circumference;
-  circle.style.strokeDashoffset = offset;
+    const offset = circumference - percent / 100 * circumference;
+    circle.style.strokeDashoffset = offset;
 }
+
+function getCurrentPercent() {
+    currentSlide = document.querySelector('.slick-current');
+    currentPercentValue = currentSlide.children[2].innerText.substr(0, 2);
+    recalculateSizes();
+}
+
+recalculateSizes();
+
+setInterval(getCurrentPercent, 500);
