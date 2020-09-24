@@ -104,6 +104,10 @@
 .footer__sections-item {
     margin: 0 0 5px;
 
+    @media (min-width: 1200px) {
+        margin-bottom: 10px;
+    }
+
     text-align: center;
 }
 

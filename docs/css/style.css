@@ -1361,6 +1361,10 @@ iframe {
     margin-top: 40px;
   }
 
+  .footer__sections-item {
+    margin-bottom: 10px;
+  }
+
   .footer__sections-link {
     text-align: left;
   }
