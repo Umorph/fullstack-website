@@ -47,6 +47,8 @@
 }
 
 .site-navigation__link {
+    position: relative;
+
     font-size: 10px;
     font-weight: 700;
     line-height: 11px;
@@ -60,5 +62,29 @@
         font-weight: 700;
         line-height: 17px;
         color: #000000;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+
+        display: block;
+        width: 0;
+        height: 2px;
+
+        background-color: $black;
+
+        @include smooth;
+    }
+
+    &:hover,
+    &:focus {
+        outline: none;
+
+        &::after {
+            width: 100%;
+        }
     }
 }
