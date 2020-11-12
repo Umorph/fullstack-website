@@ -1,0 +1,134 @@
+.keyvisual-contacts {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include container-mobile;
+
+    @media (min-width: 750px) {
+        @include container-tablet;
+    }
+
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        align-items: flex-start;
+        @include container-desktop;
+    }
+
+    @include outline(blue);
+}
+
+.keyvisual-contacts__heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (min-width: 1200px) {
+        margin-top: 250px;
+    }
+}
+
+.keyvisual-contacts__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (min-width: 1200px) {
+        margin-top: 330px;
+    }
+}
+
+.keyvisual-contacts__heading {
+    margin: 22px 0 0;
+    padding: 0;
+
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 56px;
+    color: $black;
+
+    @media (min-width: 750px) {
+        margin-top: 70px;
+
+        font-size: 55px;
+        line-height: 62px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: 0;
+
+        font-size: 72px;
+        line-height: 81px;
+    }
+}
+
+.keyvisual-contacts__image {
+    margin: 10px 0 0;
+    width: 310px;
+
+    @media (min-width: 750px) {
+        margin-top: 20px;
+        width: 320px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: 0;
+        width: 470px;
+    }
+}
+
+.keyvisual-contacts__paragraph {
+    margin: 30px 0 0;
+    padding: 0;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    color: $black;
+    text-align: center;
+
+    @media (min-width: 750px) {
+        margin-top: 40px;
+
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    @media (min-width: 1200px) {
+        text-align: right;
+    }
+
+    &--desktop-small {
+        @media (min-width: 1200px) {
+            font-size: 18px;
+            line-height: 19px;
+        }
+    }
+}
+
+.keyvisual-contacts__link {
+    display: block;
+    box-sizing: border-box;
+    margin: 30px 0 0;
+    padding: 18px 75px;
+
+    font-size: 25px;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: $white;
+
+    background-color: $light-blue;
+    border-radius: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+
+    @media (min-width: 750px) {
+        margin-top: 40px;
+    }
+}
