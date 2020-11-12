@@ -39,6 +39,11 @@
         width: 200px;
         height: 350px;
     }
+
+    &:hover,
+    &:focus {
+        outline: none;
+    }
 }
 
 .skills-slider__image {
