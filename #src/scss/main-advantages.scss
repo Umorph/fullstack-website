@@ -2,11 +2,13 @@
     @include container-mobile;
     margin: 0;
     margin-top: 70px;
+    margin-bottom: 320px;
     padding: 0;
 
     @media (min-width: 750px) {
         @include container-tablet;
         margin-top: 160px;
+        margin-bottom: 500px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -15,6 +17,7 @@
     @media (min-width: 1200px) {
         @include container-desktop;
         margin-top: 240px;
+        margin-bottom: 605px;
     }
 }
 

@@ -2,7 +2,7 @@
     position: relative;
     
     @include container-mobile;
-    margin-top: 320px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -10,12 +10,12 @@
 
     @media (min-width: 750px) {
         @include container-tablet;
-        margin-top: 500px;
+        margin-bottom: 90px;
     }
 
     @media (min-width: 1200px) {
         @include container-desktop;
-        margin-top: 605px;
+        margin-bottom: 300px;
     }
 }
 

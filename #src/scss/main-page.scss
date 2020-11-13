@@ -4,19 +4,39 @@
     justify-content: flex-start;
     align-items: center;
 
+    &--keyvisual-icons {
+        background-image: url("../img/keyvisual-bg.png");
+        background-position: 0 0;
+        background-repeat: repeat;
+    }
+
     &--yellow-circuit {
-        background-image: url("../img/yellow-bg-mobile.svg");
-        background-position: center 0;
-        background-repeat: no-repeat;
-        background-size: 100% 80%;
+        background-image:   url("../img/cubes-top-mobile.svg"),
+                            url("../img/cubes-bottom-mobile.svg"),
+                            url("../img/yellow-bg-mobile.svg");
+        background-position: center 110px, center 95%, center 0;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: auto, auto, 100% 90%;
 
         @media (min-width: 750px) {
-            background-image: url("../img/yellow-bg-tablet.svg");
-            background-size: auto;
+            background-image:   url("../img/cubes-top-tablet.svg"),
+                                url("../img/cubes-bottom-tablet.svg"),
+                                url("../img/yellow-bg-tablet.svg");
+            background-position: center 230px, center 100%, center 0;
+            background-size: auto, auto, auto;
         }
 
         @media (min-width: 1200px) {
-            background-image: url("../img/yellow-bg-desktop.svg");
+            background-image:   url("../img/cubes-top-desktop.svg"),
+                                url("../img/cubes-bottom-desktop.svg"),
+                                url("../img/yellow-bg-desktop.svg");
+            background-position: center 430px, center 100%, center 0;
         }
+    }
+
+    &--slider-icons {
+        background-image: url("../img/slider-bg.png");
+        background-position: 200 0;
+        background-repeat: repeat;
     }
 }
