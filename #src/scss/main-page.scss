@@ -40,3 +40,51 @@
         background-repeat: repeat;
     }
 }
+
+.main-page__profile {
+    @media (min-width: 750px) {
+        margin-top: 70px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: 130px;
+    }
+}
+
+.main-page__stat {
+    margin: 58px 0 0;
+    padding: 0;
+
+    @media (min-width: 750px) {
+        margin-top: 150px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: 300px;
+    }
+}
+
+.main-page__advantages {
+    margin: 70px 0 320px;
+    padding: 0;
+
+    @media (min-width: 750px) {
+        margin: 160px 0 500px;
+    }
+
+    @media (min-width: 1200px) {
+        margin: 240px 0 605px;
+    }
+}
+
+.main-page__skills {
+    margin: 0 0 100px;
+
+    @media (min-width: 750px) {
+        margin-bottom: 90px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 300px;
+    }
+}
