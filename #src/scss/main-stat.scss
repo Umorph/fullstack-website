@@ -1,10 +1,17 @@
 .main-stat {
-    margin: 0;
-    margin-top: 58px;
+    margin: 58px 0 0;
     padding: 0;
     width: 100%;
 
     background-color: #ffffff;
+
+    @media (min-width: 750px) {
+        margin-top: 150px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: 300px;
+    }
 }
 
 .main-stat__list {
