@@ -91,11 +91,16 @@
 .footer__sections-list {
     margin: 25px 0 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
     list-style: none;
 
     @media (min-width: 1200px) {
         margin-top: 40px;
+        align-items: flex-start;
     }
 }
 
@@ -105,11 +110,11 @@
     @media (min-width: 1200px) {
         margin-bottom: 10px;
     }
-
-    text-align: center;
 }
 
 .footer__sections-link {
+    position: relative;
+
     display: block;
     margin: 0;
     padding: 0;
@@ -122,6 +127,30 @@
 
     @media (min-width: 1200px) {
         text-align: left;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+        width: 0;
+        height: 1.5px;
+
+        background-color: $black;
+
+        @include smooth;
+    }
+
+    &:hover,
+    &:focus {
+        outline: none;
+
+        &::after {
+            width: 100%;
+        }
     }
 }
 
@@ -160,6 +189,15 @@
     display: block;
     width: 100%;
     height: 100%;
+}
+
+.footer__social-icon {
+    @include smooth;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
 }
 
 .footer__authors {
