@@ -1012,8 +1012,6 @@ iframe {
   margin: 0 auto;
   padding: 0 15px;
   width: 340px;
-  -webkit-box-shadow: inset 0 0 0 1px blue;
-          box-shadow: inset 0 0 0 1px blue;
 }
 
 .keyvisual-contacts__heading-wrapper {
